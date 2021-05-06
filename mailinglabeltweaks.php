@@ -7,7 +7,7 @@ use CRM_Mailinglabeltweaks_ExtensionUtil as E;
 
 function mailinglabeltweaks_civicrm_alterMailingLabelParams(&$args) {
   // convert the mailing label text to uppercase
-  $args['txt'] = strtoupper($args['txt']);
+  $args['txt'] = mb_strtoupper($args['txt'], 'UTF-8');
 }
 
 
