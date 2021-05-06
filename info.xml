@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<extension key="eu.businessandcode.mailinglabeltweaks" type="module">
+  <file>mailinglabeltweaks</file>
+  <name>Mailing Label Tweaks</name>
+  <description>Performs modifications to mailing labels, not possible via the CiviCRM interface.</description>
+  <license>AGPL-3.0</license>
+  <maintainer>
+    <author>Alain Benbassat</author>
+    <email>alain@businessandcode.eu</email>
+  </maintainer>
+  <urls>
+    <url desc="Main Extension Page">https://github.com/AlainBenbassat/eu.businessandcode.mailinglabeltweaks</url>
+    <url desc="Licensing">https://www.gnu.org/licenses/agpl-3.0.html</url>
+  </urls>
+  <releaseDate>2021-05-06</releaseDate>
+  <version>1.0</version>
+  <develStage>stable</develStage>
+  <compatibility>
+    <ver>5.0</ver>
+  </compatibility>
+  <comments>There's no admin screen yet. Currently, this extension only converts the text on the mailing lable to uppercase.</comments>
+  <classloader>
+    <psr4 prefix="Civi\" path="Civi"/>
+  </classloader>
+  <civix>
+    <namespace>CRM/Mailinglabeltweaks</namespace>
+  </civix>
+</extension>
